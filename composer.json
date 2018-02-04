@@ -1,0 +1,18 @@
+{
+    "name": "joey/toolapp",
+    "authors": [
+        {
+            "name": "Joey",
+            "email": "under767@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+    	"psr-4": {
+    		"HT\\": "inc/classes"
+    	}
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.5"
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "tool-app",
+  "version": "1.0.0",
+  "description": "Inventory Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "tool"
+  ],
+  "author": "Richard Straile",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "mocha": "^5.0.0"
+  }
+}

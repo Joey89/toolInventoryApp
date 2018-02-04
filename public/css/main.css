@@ -1,0 +1,188 @@
+/**
+ * APP: ToolApp
+ * Author: Richard Straile
+ *
+ *
+ *
+*/
+.highlight-selection {
+  background: lightblue; }
+
+.unhightlight-selection {
+  background: transparent; }
+
+body {
+  background: #ecf2f9; }
+
+.HT-container {
+  margin: 10%; }
+
+.toolappnav ul {
+  font-size: 1.25em; }
+  .toolappnav ul li {
+    display: inline-block; }
+    .toolappnav ul li:after {
+      content: ' /'; }
+    .toolappnav ul li:last-child:after {
+      content: ''; }
+    .toolappnav ul li a {
+      text-decoration: none;
+      color: #132639;
+      padding: 5px 12px;
+      transition: 1s all;
+      border-radius: 3px; }
+      .toolappnav ul li a:hover, .toolappnav ul li a:focus {
+        color: #5e7184;
+        background: #b4c0cd; }
+
+#tool_search {
+  box-model: border-box;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px; }
+
+.table_of_tools {
+  box-model: border-box;
+  text-transform: uppercase;
+  width: 100%;
+  background: #e6e6e6;
+  border: 2px solid #132639;
+  font-weight: bold; }
+  .table_of_tools .update_data:hover, .table_of_tools .update_data:focus {
+    cursor: pointer; }
+  .table_of_tools #price_filter:hover, .table_of_tools #price_filter:focus {
+    cursor: pointer; }
+  .table_of_tools tr:nth-child(even) {
+    background: #e6f2ff; }
+    .table_of_tools tr:nth-child(even):hover, .table_of_tools tr:nth-child(even):focus {
+      background: #b4c0cd; }
+  .table_of_tools tr:nth-child(odd) {
+    background: #336699; }
+    .table_of_tools tr:nth-child(odd):hover, .table_of_tools tr:nth-child(odd):focus {
+      background: #6598cb; }
+  .table_of_tools th {
+    background: #e6f2ff; }
+
+.update_display {
+  display: none;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 80%;
+  margin-left: 10%;
+  background: #e6f2ff;
+  text-align: center;
+  font-size: 1.25em; }
+  .update_display .update_display_text {
+    text-align: center; }
+
+.search_text {
+  color: red; }
+
+.create_tools {
+  width: 100%;
+  box-sizing: border-box; }
+  .create_tools label {
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase; }
+  .create_tools select {
+    display: block;
+    width: 100%;
+    padding: 5px; }
+    .create_tools select option {
+      font-weight: bold;
+      text-transform: uppercase; }
+  .create_tools input[type="text"] {
+    display: block;
+    width: 60%;
+    padding: 5px; }
+  .create_tools input[type="number"] {
+    display: block;
+    width: 30%;
+    padding: 5px; }
+  .create_tools #tool_description {
+    width: 100%;
+    height: 100px; }
+  .create_tools .description {
+    color: gray;
+    font-size: .75em; }
+
+.button_create {
+  margin-top: 20px; }
+
+.btn {
+  padding: 5px 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  transition: 1s all; }
+  .btn:hover, .btn:focus {
+    background: #b4b4b4;
+    color: #545454;
+    cursor: pointer; }
+
+.btn-primary {
+  background: #132639;
+  color: #e6f2ff;
+  border: 1px solid #132639; }
+  .btn-primary:hover, .btn-primary:focus {
+    background: black;
+    color: white;
+    border: 1px solid #e6f2ff; }
+
+#tool_container {
+  position: relative;
+  width: 400px;
+  height: 100px; }
+
+.tool_message_flash {
+  display: block;
+  position: relative;
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
+  width: 400px;
+  background: #336699;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+#tool_message_flash_remove:before {
+  content: 'X';
+  color: #132639;
+  font-weight: bold;
+  padding: 5px;
+  position: absolute;
+  background: #e6f2ff;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  cursor: pointer; }
+
+#show_sold:hover, #show_sold:focus {
+  cursor: pointer; }
+
+.toggle_description {
+  display: inline;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.description {
+  color: gray;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .75em;
+  text-style: italic; }
+
+.error_div {
+  background: #ffb3b3;
+  border-radius: 3px;
+  box-shadow: 2.5px 5px #222;
+  padding: 20px; }
+  .error_div h2 {
+    font-weight: bold;
+    text-transform: uppercase; }
+  .error_div ul li {
+    list-style: upper-roman;
+    font-size: 1.2em; }

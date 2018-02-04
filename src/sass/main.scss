@@ -1,0 +1,244 @@
+/**
+ * APP: ToolApp
+ * Author: Richard Straile
+ *
+ *
+ *
+*/
+@import 'vars/_vars';
+.highlight-selection{
+	background: lightblue;
+}
+.unhightlight-selection{
+	background: transparent;
+}
+
+body{
+	background: #ecf2f9;
+}
+.HT-container{
+	margin: 10%;
+}
+.toolappnav{
+	ul{
+		font-size: 1.25em;
+		li{
+			display: inline-block;
+			&:after{
+				content: ' /';
+			}
+			&:last-child:after{
+				content: '';
+			}
+			a{
+				text-decoration: none;
+				color: $dark-blue;
+				padding: 5px 12px;
+				transition: 1s all;
+				border-radius: 3px;
+				&:hover,
+				&:focus{
+					color: $dark-blue + 75;
+					background: $soft-blue - 50;
+				}
+			}
+		}
+	}
+}
+#tool_search{
+	box-model: border-box;
+	width: 80%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.table_of_tools{
+	.update_data{
+		
+		&:hover,
+		&:focus{
+			cursor:pointer;
+		}
+	}
+	#price_filter{
+		&:hover,
+		&:focus{
+			cursor: pointer;
+		}	
+		
+	}
+	box-model: border-box;
+	text-transform: uppercase;
+	width: 100%;
+	background: $gray;
+	border: 2px solid $dark-blue;
+	font-weight: bold;
+	tr:nth-child(even){
+		background:$soft-blue;
+		&:hover,
+		&:focus{
+			background: $soft-blue - 50;
+		}
+	}
+	tr:nth-child(odd){
+		background:$dull-blue;
+		&:hover,
+		&:focus{
+			background: $dull-blue + 50;
+		}
+	}
+	th{
+		background: $soft-blue;
+	}
+}
+
+.update_display{
+	display: none;
+	box-sizing: border-box;
+	padding: 20px;
+	width: 80%;
+	margin-left: 10%;
+	background: $soft-blue;
+	text-align: center;
+	font-size: 1.25em;
+	.update_display_text{
+		text-align: center;
+	}
+}
+.search_text{
+	color:red;
+}
+
+.create_tools{
+	width: 100%;
+	box-sizing: border-box;
+	label{
+		font-weight: bold;
+		display: block;
+		text-transform: uppercase;
+	}
+	select{
+		display: block;
+		width: 100%;
+		padding: 5px;
+		option{
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+	}
+	input[type="text"]{
+		display: block;
+		width: 60%;
+		padding: 5px;
+	}
+	input[type="number"]{
+		display: block;
+		width: 30%;
+		padding: 5px;
+	}
+	#tool_description{
+		width: 100%;
+		height: 100px;
+	}
+	.description{
+		color: gray;
+		font-size: .75em;
+	}
+}
+
+.button_create{
+	margin-top: 20px;
+}
+.btn{
+	padding: 5px 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	transition: 1s all;
+	&:hover,
+	&:focus{
+		background: #fff - 75;
+		color: #222 + 50;
+		cursor: pointer;
+	}
+}
+
+.btn-primary{
+	background: $dark-blue;
+	color: $soft-blue;
+	border: 1px solid $dark-blue;
+	&:hover,
+	&:focus{
+		background: $dark-blue - 75;
+		color: $soft-blue + 50;
+		border: 1px solid $soft-blue;
+	}
+}
+
+#tool_container{
+	position: relative;
+	width: 400px;
+	height: 100px;
+}
+.tool_message_flash{
+	display: block;
+	position: relative;
+	text-align: center;
+	line-height: 100px;
+	height: 100px;
+	width: 400px;
+	background: $dull-blue;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#tool_message_flash_remove:before{
+	content: 'X';
+	color: $dark-blue;
+	font-weight: bold;
+	padding: 5px;
+	position: absolute;
+	background: $soft-blue;
+	border-radius: 50%;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+//checkbox on update tool
+#show_sold{
+	&:hover,
+	&:focus{
+		cursor:pointer;
+	}
+}
+.toggle_description{
+	display: inline;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.description{
+	color: gray;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: .75em;
+	text-style: italic;
+}
+
+.error_div{
+	background: #ffb3b3;
+	border-radius: 3px;
+	box-shadow: 2.5px 5px #222;
+	padding: 20px;
+	h2{
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	ul{
+		li{
+			list-style: upper-roman;
+			font-size: 1.2em;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+filter by dates ( month, year )
+
+validate all forms ( max len required.. etc)
+compare tool inputs with regex etc
+max length in description code
+
+custom confirm box (instead of function)
+
+
+in message flash box = tool man image
+add #{} of tools
+view on tool item
+font
+seo optimize?
+
+
+
+create.php
